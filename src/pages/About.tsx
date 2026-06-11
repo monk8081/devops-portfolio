@@ -1,23 +1,37 @@
 import { motion } from 'framer-motion';
 import { TerminalHeader } from '../components/TerminalHeader';
 import { Typewriter } from '../components/Typewriter';
-import { Calendar, MapPin, Code, Zap } from 'lucide-react';
+import { MapPin, Code, Zap, Briefcase, GraduationCap, BookOpen } from 'lucide-react';
 
 export const About = () => {
   const timeline = [
     {
-      year: '2023 - Present',
-      title: 'Freelance DevOps & Cloud Engineer',
-      company: 'Self-Employed',
-      description:
-        'Working on freelance projects focusing on cloud automation, CI/CD, and container orchestration using AWS, Docker, and Kubernetes.',
-      icon: Code,},
+      year: 'Aug 2024 – Present',
+      title: 'DevOps Engineer',
+      company: 'Culture Holidays',
+      description: 'Architected multi-region AWS infrastructure for 50+ production projects. Reduced compute costs ~30%, implemented zero-downtime Blue-Green deployments, built CI/CD pipelines cutting deployment errors ~90%, secured delivery via CloudFront + AWS WAF, and maintained 99.9% uptime.',
+      icon: Briefcase,
+    },
     {
-      year: '2019 - 2023',
-      title: 'Computer Science Graduate',
-      company: 'CVR College Of Engineering',
-      description: 'Bachelor\'s degree with focus on software engineering and cloud computing.',
-      icon: Calendar,
+      year: 'Oct 2023',
+      title: 'Master of Computer Application (MCA)',
+      company: 'Shri Krishna University, Chhatarpur, MP',
+      description: 'CGPA: 8.5 — Advanced coursework in cloud computing, distributed systems, and software engineering.',
+      icon: GraduationCap,
+    },
+    {
+      year: 'Aug 2022 – Jun 2023',
+      title: 'DevOps Pro Program',
+      company: 'iNeuron.ai',
+      description: 'Intensive hands-on training in CI/CD, Kubernetes, Terraform, Docker, Ansible, Jenkins, AWS, and Linux. Built and deployed real-world DevOps pipelines end to end.',
+      icon: BookOpen,
+    },
+    {
+      year: 'Jul 2021',
+      title: 'Bachelor of Computer Application (BCA)',
+      company: 'University of Allahabad, Prayagraj, UP',
+      description: 'CGPA: 7.6 — Foundation in computer science, programming, and software development principles.',
+      icon: GraduationCap,
     },
   ];
 
@@ -67,13 +81,12 @@ export const About = () => {
                 </div>
                 <div className="space-y-4 text-neutral-200 leading-relaxed">
                   <Typewriter
-                    text="Hello, I'm Neeraj Chandra Nakka, and I turn code into production reality."
+                    text="I build cloud platforms that ship software at the speed of trust."
                     delay={30}
-                    className="text-primary-500 font-semibold block mb-4"
+                    className="text-primary-500 font-semibold block mb-4 text-lg"
                   />
                   <p>
-                    I design, automate, and deploy systems that turn code into production-grade reality. 
-                    My journey began with full-stack development—building web apps with Java, React, and Node.js.
+                    I'm Manish Kumar — a DevOps & Cloud engineer focused on AWS, Azure, Kubernetes and the pipelines that take your code from commit to production without midnight pages.
                   </p>
                   <p>
                     Over time, that foundation evolved into a passion for DevOps and Cloud Engineering, 
@@ -82,8 +95,8 @@ export const About = () => {
                   <p>
                     I work across AWS and Azure, orchestrate containers with Docker and Kubernetes, 
                     and define infrastructure with Terraform and automation scripts. Behind the command line, 
-                    I'm equally comfortable in version control and workflow automation, using Git, GitHub, 
-                    and GitLab CI/CD to bridge collaboration and delivery.
+                    I'm equally comfortable in version control and workflow automation, using Git, GitHub,Bitbucket, 
+                    and Azure DevOps to bridge collaboration and delivery.
                   </p>
                   <p className="text-primary-500 font-medium">
                     For me, DevOps isn't just about speed—it's about precision, repeatability, 
@@ -108,19 +121,19 @@ export const About = () => {
                 <div className="space-y-4">
                   <div className="flex items-center justify-between">
                     <span className="text-neutral-400">Experience</span>
-                    <span className="text-primary-500 font-mono">1+ years</span>
+                    <span className="text-primary-500 font-mono">2+ years</span>
                   </div>
                   <div className="flex items-center justify-between">
                     <span className="text-neutral-400">Cloud Platforms</span>
                     <span className="text-primary-500 font-mono">AWS, Azure</span>
                   </div>
                   <div className="flex items-center justify-between">
-                    <span className="text-neutral-400">Projects</span>
-                    <span className="text-primary-500 font-mono">7+ deployed</span>
+                    <span className="text-neutral-400">Production Projects</span>
+                    <span className="text-primary-500 font-mono">50+ deployed</span>
                   </div>
                   <div className="flex items-center justify-between">
                     <span className="text-neutral-400">Technologies</span>
-                    <span className="text-primary-500 font-mono">19+ mastered</span>
+                    <span className="text-primary-500 font-mono">25+ mastered</span>
                   </div>
                 </div>
               </div>
@@ -130,7 +143,7 @@ export const About = () => {
                   Specializations
                 </h3>
                 <div className="flex flex-wrap gap-2">
-                  {['Cloud Architecture', 'CI/CD Pipelines', 'Infrastructure as Code', 'Container Orchestration', 'Microservices'].map((skill) => (
+                  {['Cloud Architecture', 'CI/CD Pipelines', 'Infrastructure as Code', 'Container Orchestration', 'Monitoring & Observability'].map((skill) => (
                     <span
                       key={skill}
                       className="px-3 py-1 bg-neutral-800 text-neutral-200 text-sm rounded-md border border-neutral-700 hover:border-primary-500/50 transition-colors"

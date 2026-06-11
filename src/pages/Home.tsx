@@ -41,14 +41,24 @@ export const Home = () => {
               <span className="terminal-cursor ml-2" />
             </div>
 
-            {/* Subtitle */}
+            {/* Tagline */}
             <motion.p
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 2 }}
-              className="text-xl md:text-2xl text-neutral-200 max-w-4xl mx-auto leading-relaxed"
+              className="text-2xl md:text-3xl text-primary-500 font-semibold max-w-3xl mx-auto leading-snug"
             >
-              {HERO_CONTENT}
+              I build cloud platforms that ship software at the speed of trust.
+            </motion.p>
+
+            {/* Subtitle */}
+            <motion.p
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 2.3 }}
+              className="text-lg md:text-xl text-neutral-400 max-w-4xl mx-auto leading-relaxed"
+            >
+              I'm Manish Kumar — a DevOps & Cloud engineer focused on AWS, Azure, Kubernetes and the pipelines that take your code from commit to production without midnight pages.
             </motion.p>
 
             {/* CTA Buttons */}
@@ -200,7 +210,7 @@ export const Home = () => {
                 Start a Project
               </Link>
               <a
-                href="https://github.com/neerajnakka"
+                href="https://github.com/monk8081"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center px-8 py-4 border-2 border-neutral-600 text-neutral-200 hover:border-primary-500 hover:text-primary-500 font-semibold rounded-lg transition-all duration-200"

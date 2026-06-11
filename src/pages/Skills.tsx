@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { TerminalHeader } from '../components/TerminalHeader';
 import { Typewriter } from '../components/Typewriter';
-import { Cloud, Container, Code, Database, Terminal as TerminalIcon } from 'lucide-react';
+import { Cloud, Container, Code, Database, Terminal as TerminalIcon, Activity } from 'lucide-react';
 import { SKILLS_BY_CATEGORY } from '../data/portfolio';
 
 export const Skills = () => {
@@ -31,6 +31,13 @@ export const Skills = () => {
       icon: TerminalIcon,
       skills: SKILLS_BY_CATEGORY.infrastructure,
       color: 'text-purple-500',
+    },
+    {
+      id: 'monitoring',
+      title: 'Monitoring & Observability',
+      icon: Activity,
+      skills: SKILLS_BY_CATEGORY.monitoring,
+      color: 'text-yellow-500',
     },
     {
       id: 'devops',
